@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++14 -O2 -Wall
+CXXFLAGS = -std=c++11 -O2 -Wall
 TARGET = code
 SOURCE = main.cpp
 
