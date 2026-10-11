@@ -1,11 +1,11 @@
-#include <iostream>
+#include <cstdio>
 #include <iomanip>
 #include <vector>
 using namespace std;
 
 int main() {
     int n, m;
-    cin >> n >> m;
+    scanf("%d %d", &n, &m);
     
     int target = n - m;  // apples remaining when we've eaten m apples
     
@@ -27,7 +27,7 @@ int main() {
         E[k] = 1.0 + running_sum / k;
     }
     
-    cout << fixed << setprecision(2) << E[n] << endl;
+    printf("%.2f\n", E[n]);
     
     return 0;
 }
